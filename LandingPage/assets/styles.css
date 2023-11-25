@@ -1,0 +1,393 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar img {
+    width: 50%;
+    border-radius: 6px;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #f45b00;
+}
+
+/* Hero */
+#hero {
+    background: url('hero.jpg') center/cover no-repeat;
+    color: #0127a5;
+    text-align: center;
+    padding: 450px 0;
+}
+
+#hero h1 {
+    color: #0127a5;
+    font-size: 45px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#hero p {
+    margin-top: 1px;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.cta-button {
+    background-color: #010101;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff6600;
+}
+
+/* Descripción */
+#descripcion {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#descripcion h2 {
+    background-color: #040404;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 5px;
+    padding: 15px;
+    color: #f9f9f9;
+}
+
+.description-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-content p {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 20px;
+}
+
+.description-content img {
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+/* Beneficios */
+#beneficios {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#beneficios h2 {
+    color: #f9f9f9;
+    font-size: 24px;
+    margin-bottom: 35px;
+    background-color: #000000;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 5px;
+}
+
+.benefits-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.benefit {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.benefit:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.benefit h3 {
+    color: #333;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    color: #666;
+    font-size: 18px;
+}
+
+/* Equipo */
+#equipo {
+    text-align: center;
+    padding: 80px 0;
+}
+
+#equipo h2 {
+    color: #f9f9f9;
+    background-color: #000000;
+    border-radius: 5px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 24px;
+    margin-bottom: 35px;
+    padding: 15px;
+}
+
+.equipo-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.equipo-content p {
+    flex: 1;
+    margin-left: 250px;
+    margin-right: 20px;
+}
+
+.equipo-content .integrantes {
+    flex: 2;
+}
+
+.equipo-content .carousel {
+    flex: 1;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img {
+    width: 300px;
+    height: 350px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.carousel img.active {
+    opacity: 1;
+}
+
+
+#app-presentation {
+    text-align: center;
+    padding: 80px 0;
+}
+
+#app-presentation h2 {
+    color: #f9f9f9;
+    background-color: #000000;
+    border-radius: 5px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 24px;
+    margin-bottom: 35px;
+    padding: 15px;
+}
+
+.app-presentation-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-presentation-content p {
+    flex: 1;
+    margin-left: 250px;
+    margin-right: 20px;
+}
+
+.app-presentation-content .integrantes {
+    flex: 2;
+}
+
+.app-presentation-content .carouse2 {
+    flex: 1;
+}
+
+.carouse2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouse2 img {
+    width: 300px;
+    height: 350px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.carouse2 img.active {
+    opacity: 1;
+}
+
+
+
+/* Contacto */
+#contacto h2 {
+    background-color: #000000;
+    color: #f9f9f9;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 35px;
+    padding: 15px;
+}
+
+#contacto p {
+    margin-left: 180px;
+}
+
+#contacto a {
+    margin-left: 10px;
+}
+
+#contacto svg {
+    margin-left: 180px;
+}
+
+/* Redes Sociales */
+#social-media h2 {
+    margin-left: 180px;
+}
+
+.social-media-content {
+    margin-left: 180px;
+    display: flex;
+}
+
+.buttonfb button {
+    margin-right: 5px;
+    background-color: #0127a5;
+}
+
+.buttonx button {
+    background-color: #000000;
+    margin-right: 5px;
+}
+
+.buttonln button {
+    background-color: #2958f0;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 2px;
+    padding-top: 0.1px;
+}
+
+/* Estilos para pantallas más pequeñas (max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar img {
+        width: 100%;
+    }
+    
+    #hero {
+        padding: 250px 0;
+    }
+    
+    #hero h1 {
+        font-size: 30px;
+    }
+    
+    #hero p {
+        font-size: 18px;
+    }
+    
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+    
+    #beneficios h2 {
+        font-size: 20px;
+    }
+    
+    .benefit {
+        font-size: 16px;
+    }
+    
+    #equipo h2 {
+        font-size: 20px;
+    }
+    
+    .carousel img {
+        width: 200px;
+        height: 250px;
+    }
+    
+    #contacto h2 {
+        font-size: 20px;
+    }
+}
